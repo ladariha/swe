@@ -16,7 +16,16 @@ public class SweApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Sleva[] slevy = SlevySkrz.getSlevy();
+        ParserSkrz skrz = new ParserSkrz();
+//        skrz.parse();
 
+        ParserSlevyDnes slevyDnes = new ParserSlevyDnes();
+
+    //    slevyDnes.parse();
+
+
+        ParserSleviste sleviste = new ParserSleviste();
+
+        sleviste.parse();
     }
 }

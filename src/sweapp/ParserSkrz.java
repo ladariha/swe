@@ -16,9 +16,10 @@ import org.jsoup.select.Elements;
  *
  * @author lada
  */
-public class SlevySkrz {
+public class ParserSkrz extends Parser {
 
-    public static Sleva[] getSlevy() {
+    @Override
+    public Sleva[] parse() {
         try {
             Document doc = Jsoup.connect("http://www.skrz.cz/").get();
             Elements slevy = doc.getElementsByClass("object-deal");
